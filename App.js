@@ -14,15 +14,15 @@ export default function App() {
           <Text style={styles.days}>Martes</Text>
         </View>
         <View style ={styles.containerDays}>
-          <Text>Miercoles</Text>
-          <Text>Jueves</Text>
+          <Text style={styles.days}>Miercoles</Text>
+          <Text style={styles.days}>Jueves</Text>
         </View>
         <View style ={styles.containerDays}>
-          <Text>Viernes</Text>
-          <Text>Sabado</Text>
+          <Text style={styles.days}>Viernes</Text>
+          <Text style={styles.days}>Sabado</Text>
         </View>
         <View style ={styles.containerDays}>
-          <Text>Domingo</Text>
+          <Text style={styles.days}>Domingo</Text>
         </View>
         <StatusBar style="auto" />
       </View>
@@ -33,24 +33,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'stretch',
-
-    
+    alignItems: 'stretch',    
   },
 
   body: {
-    flex:9,
+    flex:13,
     backgroundColor: '#ffd',
     justifyContent: 'space-around',
-    alignItems: 'center',
+    alignItems: 'stretch',
   },
 
   header: {
-    flex: 1,
+    flex: 2,
     backgroundColor: '#fcba03',
     alignItems: 'center',
     fontWeight: "bold",
     paddingTop: 30,
+    paddingBottom: 10,
 
   },
 
@@ -64,15 +63,15 @@ const styles = StyleSheet.create({
  containerDays : {
    flex: 1,
    margin: 10,
-   paddingTop: 50,
-   backgroundColor: '#faa',
    flexDirection: 'row',
  },
 
 days: {
   flex:1,
   margin: 5,
-  backgroundColor: "#0ff"
+  backgroundColor: "#e8d102",
+  textAlign: 'center',
+  color: '#fff',
 },
 
 });
